@@ -3,515 +3,311 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Política de Privacidad | Velum</title>
-  <meta name="description" content="Política de privacidad de Velum. Información sobre datos tratados, permisos, seguridad, biometría local y derechos del usuario.">
+  <meta name="description" content="Política de Privacidad de Velum Via">
+  <title>Política de Privacidad | Velum Via</title>
   <style>
-    :root {
-      --bg: #f8fafc;
-      --card: #ffffff;
-      --text: #0f172a;
-      --muted: #475569;
-      --accent: #0369a1;
-      --border: #e2e8f0;
-      --soft: #f1f5f9;
-      --warning: #fff7ed;
-      --warning-border: #fed7aa;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #020617;
-        --card: #0f172a;
-        --text: #f8fafc;
-        --muted: #cbd5e1;
-        --accent: #7dd3fc;
-        --border: rgba(255,255,255,.14);
-        --soft: rgba(255,255,255,.06);
-        --warning: rgba(251, 146, 60, .12);
-        --warning-border: rgba(251, 146, 60, .32);
-      }
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-    }
-
-    header {
-      background: var(--card);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .wrap {
-      width: min(920px, calc(100% - 32px));
-      margin: 0 auto;
-    }
-
-    header .wrap {
-      padding: 34px 0;
-    }
-
-    main.wrap {
-      padding: 36px 0 64px;
-    }
-
-    .brand {
-      font-weight: 750;
-      color: var(--text);
-      text-decoration: none;
-      font-size: 1.05rem;
-    }
-
-    h1 {
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      line-height: 1.08;
-      margin: 28px 0 10px;
-      letter-spacing: -.04em;
-    }
-
-    h2 {
-      font-size: 1.45rem;
-      margin-top: 40px;
-      margin-bottom: 12px;
-      letter-spacing: -.02em;
-    }
-
-    h3 {
-      font-size: 1.1rem;
-      margin-top: 24px;
-      margin-bottom: 8px;
-    }
-
-    p, li {
-      color: var(--muted);
-      font-size: 1rem;
-    }
-
-    strong {
-      color: var(--text);
-    }
-
-    a {
-      color: var(--accent);
-    }
-
-    ul {
-      padding-left: 1.25rem;
-    }
-
-    .notice {
-      background: var(--soft);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 18px 20px;
-      margin: 24px 0;
-    }
-
-    .warning {
-      background: var(--warning);
-      border: 1px solid var(--warning-border);
-      border-radius: 18px;
-      padding: 18px 20px;
-      margin: 24px 0;
-    }
-
-    .meta {
-      color: var(--muted);
-      margin: 0;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      overflow: hidden;
-      display: block;
-    }
-
-    thead, tbody, tr {
-      display: table;
-      width: 100%;
-      table-layout: fixed;
-    }
-
-    th, td {
-      text-align: left;
-      vertical-align: top;
-      padding: 12px;
-      border-bottom: 1px solid var(--border);
-      font-size: .95rem;
-      color: var(--muted);
-    }
-
-    th {
-      background: var(--soft);
-      color: var(--text);
-    }
-
-    tr:last-child td {
-      border-bottom: none;
-    }
-
-    footer {
-      border-top: 1px solid var(--border);
-      background: var(--card);
-      padding: 28px 0;
-      color: var(--muted);
-      font-size: .92rem;
-    }
-
-    @media (max-width: 720px) {
-      table {
-        overflow-x: auto;
-      }
-
-      thead, tbody, tr {
-        min-width: 720px;
-      }
-    }
+    :root { color-scheme: dark; --bg:#07100d; --panel:#0d1814; --text:#f2f7f4; --muted:#aebbb4; --accent:#55e69a; --border:rgba(255,255,255,.10); }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:radial-gradient(circle at top,#10251b 0,var(--bg) 36rem); color:var(--text); line-height:1.68; }
+    main { width:min(920px,calc(100% - 32px)); margin:0 auto; padding:56px 0 80px; }
+    article { background:rgba(13,24,20,.94); border:1px solid var(--border); border-radius:24px; padding:clamp(24px,5vw,56px); box-shadow:0 24px 80px rgba(0,0,0,.28); }
+    h1 { margin:0 0 12px; font-size:clamp(2rem,6vw,3.4rem); line-height:1.08; letter-spacing:-.035em; }
+    h2 { margin:44px 0 14px; padding-top:6px; font-size:1.5rem; line-height:1.25; color:var(--accent); }
+    h3 { margin:28px 0 10px; font-size:1.12rem; color:#d9ffe9; }
+    p { margin:0 0 16px; color:var(--muted); }
+    p:first-of-type { color:#d9e4de; }
+    ul { margin:4px 0 18px 1.2rem; padding:0; color:var(--muted); }
+    li { margin:7px 0; padding-left:.25rem; }
+    strong { color:var(--text); }
+    a { color:var(--accent); text-underline-offset:3px; }
+    @media (max-width:600px) { main { width:min(100% - 20px,920px); padding:18px 0 40px; } article { border-radius:18px; padding:24px 20px 34px; } h2 { margin-top:34px; } }
   </style>
 </head>
-
 <body>
-  <header>
-    <div class="wrap">
-      <a class="brand" href="/">Velum</a>
-      <h1>Política de Privacidad</h1>
-      <p class="meta">Última actualización: 26 de mayo de 2026</p>
-    </div>
-  </header>
-
-  <main class="wrap">
-
-    <div class="notice">
-      <p>
-        Esta Política de Privacidad explica cómo Velum trata la información relacionada con el uso de la aplicación,
-        incluyendo permisos, datos locales, autenticación biométrica, cámara, seguridad y opciones de eliminación.
-      </p>
-      <p>
-        Esta política se publica para informar a los usuarios y para cumplir con los requisitos de privacidad aplicables
-        a aplicaciones distribuidas en Google Play.
-      </p>
-    </div>
-
-    <h2>1. Responsable y contacto</h2>
-    <p>
-      Velum es una aplicación móvil orientada a proteger la lectura de mensajes y contenido sensible mediante controles
-      de privacidad local.
-    </p>
-    <p>
-      Para consultas sobre privacidad, protección de datos, eliminación de información o funcionamiento de la aplicación,
-      podés contactarnos en:
-    </p>
-    <p>
-      <strong>Email:</strong> <a href="mailto:support@usevelum.com">support@usevelum.com</a>
-    </p>
-
-    <h2>2. Alcance de esta política</h2>
-    <p>
-      Esta política aplica a la aplicación Velum y a las páginas oficiales vinculadas desde Google Play, incluyendo:
-    </p>
-    <p>
-      <strong>https://usevelum.com/privacy/</strong>
-    </p>
-    <p>
-      Si la aplicación incorpora nuevas funciones, como cuentas, sincronización, backend, pagos, suscripciones,
-      analítica, notificaciones push o servicios de terceros adicionales, esta política será actualizada antes o junto
-      con la publicación de esas funciones.
-    </p>
-
-    <h2>3. Resumen de tratamiento de datos</h2>
-    <p>
-      Velum está diseñada bajo un principio de minimización de datos. Esto significa que buscamos tratar la menor cantidad
-      posible de información personal para brindar las funciones de privacidad y seguridad de la aplicación.
-    </p>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Tipo de dato o permiso</th>
-          <th>¿Se recolecta o usa?</th>
-          <th>Finalidad</th>
-          <th>¿Se comparte con terceros?</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Cámara</td>
-          <td>Puede utilizarse localmente</td>
-          <td>Detectar presencia frente al dispositivo durante la lectura protegida</td>
-          <td>No se comparte, salvo que una versión futura indique lo contrario</td>
-        </tr>
-        <tr>
-          <td>Biometría del dispositivo</td>
-          <td>Se usa mediante el sistema operativo</td>
-          <td>Desbloquear funciones o contenido protegido</td>
-          <td>No. Velum no accede a la plantilla biométrica</td>
-        </tr>
-        <tr>
-          <td>Mensajes protegidos</td>
-          <td>Pueden almacenarse localmente</td>
-          <td>Permitir lectura protegida, expiración o lectura única</td>
-          <td>No se comparten por Velum, salvo acción del usuario o función futura informada</td>
-        </tr>
-        <tr>
-          <td>Claves o datos de seguridad local</td>
-          <td>Pueden almacenarse localmente</td>
-          <td>Cifrar o proteger contenido en el dispositivo</td>
-          <td>No se comparten</td>
-        </tr>
-        <tr>
-          <td>Datos técnicos</td>
-          <td>Pueden tratarse de forma limitada</td>
-          <td>Mejorar estabilidad, compatibilidad y seguridad</td>
-          <td>Solo si se integra un servicio técnico informado</td>
-        </tr>
-        <tr>
-          <td>Datos de contacto</td>
-          <td>Solo si el usuario nos escribe</td>
-          <td>Responder consultas, soporte o solicitudes de privacidad</td>
-          <td>No se venden. Pueden ser tratados por el proveedor de correo</td>
-        </tr>
-        <tr>
-          <td>Ubicación precisa</td>
-          <td>No prevista en la versión inicial</td>
-          <td>No aplica</td>
-          <td>No aplica</td>
-        </tr>
-        <tr>
-          <td>Contactos del dispositivo</td>
-          <td>No obligatorio en la versión inicial</td>
-          <td>No aplica, salvo función futura informada</td>
-          <td>No aplica</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2>4. Datos que Velum puede tratar</h2>
-
-    <h3>4.1 Datos almacenados localmente</h3>
-    <p>
-      Velum puede guardar información en el dispositivo del usuario, como mensajes protegidos, preferencias de privacidad,
-      reglas de expiración, estado de lectura, configuración de lectura única, claves locales o datos técnicos necesarios
-      para el funcionamiento de la aplicación.
-    </p>
-    <p>
-      Estos datos se utilizan para brindar las funciones principales de la app y, cuando corresponde, aplicar medidas de
-      cifrado o protección local.
-    </p>
-
-    <h3>4.2 Datos biométricos</h3>
-    <p>
-      Velum puede utilizar la autenticación biométrica disponible en el dispositivo, como huella digital, rostro u otro
-      método compatible.
-    </p>
-    <p>
-      La autenticación biométrica es administrada por el sistema operativo. Velum no recibe, no copia, no almacena y no
-      transmite la plantilla biométrica del usuario.
-    </p>
-
-    <h3>4.3 Cámara y detección de presencia</h3>
-    <p>
-      Velum puede solicitar acceso a la cámara para verificar localmente si hay presencia frente al dispositivo durante
-      la lectura de contenido protegido.
-    </p>
-    <p>
-      Esta función tiene como finalidad ocultar o proteger el contenido cuando no se cumplan las condiciones de lectura
-      segura. En la versión inicial, esta verificación está pensada para procesarse localmente en el dispositivo.
-    </p>
-    <p>
-      Velum no está diseñada para enviar imágenes, video o datos faciales a servidores propios para esta función, salvo
-      que una versión futura informe expresamente otro funcionamiento, actualice esta política y solicite los permisos
-      correspondientes.
-    </p>
-
-    <h3>4.4 Mensajes y contenido protegido</h3>
-    <p>
-      Velum puede permitir crear, guardar o visualizar mensajes protegidos. Dependiendo de la versión, esos mensajes
-      pueden tener reglas de expiración, lectura única, cifrado local o bloqueo visual.
-    </p>
-    <p>
-      En la versión inicial, el objetivo es que el contenido sensible se mantenga bajo control local del dispositivo.
-      Si en el futuro se incorpora backend, enlaces compartidos, sincronización o envío remoto, esta política se actualizará
-      para explicar qué datos se almacenan, por cuánto tiempo y con qué medidas de seguridad.
-    </p>
-
-    <h3>4.5 Datos técnicos y diagnóstico</h3>
-    <p>
-      La aplicación puede generar o tratar datos técnicos limitados, como versión de la app, estado de permisos, errores,
-      tipo de dispositivo o configuración de seguridad, con la finalidad de mejorar estabilidad, compatibilidad y seguridad.
-    </p>
-    <p>
-      Si se incorpora una herramienta externa de diagnóstico, analítica o crash reporting, se informará en esta política
-      y en la declaración de seguridad de datos correspondiente.
-    </p>
-
-    <h2>5. Finalidades del tratamiento</h2>
-    <p>
-      Velum puede tratar datos para las siguientes finalidades:
-    </p>
-    <ul>
-      <li>Proteger la visualización de mensajes o contenido sensible.</li>
-      <li>Permitir desbloqueo mediante autenticación biométrica del dispositivo.</li>
-      <li>Detectar presencia frente al dispositivo durante la lectura protegida.</li>
-      <li>Aplicar reglas de expiración, lectura única, bloqueo o revocación.</li>
-      <li>Guardar preferencias locales de privacidad y seguridad.</li>
-      <li>Mejorar estabilidad, compatibilidad y seguridad técnica.</li>
-      <li>Responder consultas o solicitudes enviadas voluntariamente por el usuario.</li>
-      <li>Cumplir obligaciones legales aplicables o atender requerimientos válidos.</li>
-    </ul>
-
-    <h2>6. Compartición de datos</h2>
-    <p>
-      Velum no vende datos personales del usuario.
-    </p>
-    <p>
-      En la versión inicial, Velum no está diseñada para compartir mensajes, biometría, imágenes de cámara ni claves
-      privadas con terceros.
-    </p>
-    <p>
-      Algunos terceros pueden intervenir de manera limitada para operar servicios externos necesarios, por ejemplo:
-      Google Play para la distribución de la aplicación, el sistema operativo del dispositivo, servicios de correo
-      electrónico utilizados para responder consultas o, en versiones futuras, proveedores técnicos expresamente informados.
-    </p>
-    <p>
-      Si se incorporan servicios externos como analítica, crash reporting, backend, pagos, publicidad, suscripciones,
-      notificaciones push o almacenamiento en la nube, esta política será actualizada para identificar el tipo de dato
-      tratado y la finalidad correspondiente.
-    </p>
-
-    <h2>7. Seguridad de los datos</h2>
-    <p>
-      Velum puede utilizar medidas de seguridad como cifrado local, almacenamiento seguro, autenticación biométrica del
-      sistema operativo, bloqueo visual, ocultamiento automático de contenido y restricciones de captura de pantalla
-      cuando el dispositivo y el sistema operativo lo permiten.
-    </p>
-    <p>
-      Ningún sistema es completamente infalible. La seguridad también depende del dispositivo del usuario, la versión del
-      sistema operativo, la configuración de bloqueo de pantalla, los permisos concedidos y el uso responsable de la app.
-    </p>
-
-    <h2>8. Retención de datos</h2>
-    <p>
-      Los datos almacenados localmente permanecen en el dispositivo mientras sean necesarios para el funcionamiento de la
-      aplicación, hasta que el usuario los elimine, borre los datos de la app, desinstale la aplicación o se cumplan las
-      reglas de expiración configuradas.
-    </p>
-    <p>
-      Si en el futuro Velum almacena datos en servidores propios o de terceros, esta política especificará los criterios
-      de conservación aplicables.
-    </p>
-
-    <h2>9. Eliminación de datos</h2>
-    <p>
-      El usuario puede eliminar datos locales de las siguientes formas, según las funciones disponibles en su versión:
-    </p>
-    <ul>
-      <li>Eliminar mensajes o contenido desde la propia aplicación, si la función está disponible.</li>
-      <li>Borrar los datos de la aplicación desde la configuración del sistema operativo.</li>
-      <li>Desinstalar la aplicación del dispositivo.</li>
-      <li>Solicitar asistencia escribiendo a <a href="mailto:support@usevelum.com">support@usevelum.com</a>.</li>
-    </ul>
-    <p>
-      Si determinados datos se almacenan únicamente en el dispositivo del usuario y Velum no tiene acceso remoto a ellos,
-      la eliminación deberá realizarse desde el dispositivo, la aplicación o la configuración del sistema operativo.
-    </p>
-
-    <h2>10. Permisos del dispositivo</h2>
-    <p>
-      Velum solo solicita permisos cuando son necesarios para una función concreta.
-    </p>
-    <ul>
-      <li>
-        <strong>Cámara:</strong> se usa para detección local de presencia durante lectura protegida.
-      </li>
-      <li>
-        <strong>Biometría:</strong> se usa mediante el sistema operativo para desbloquear contenido o funciones protegidas.
-      </li>
-      <li>
-        <strong>Internet:</strong> puede utilizarse si la versión incluye enlaces, soporte, actualizaciones, backend o servicios relacionados.
-      </li>
-      <li>
-        <strong>Notificaciones:</strong> pueden solicitarse si se agregan avisos de seguridad, mensajes, vencimientos o estado.
-      </li>
-    </ul>
-    <p>
-      El usuario puede conceder, rechazar o revocar permisos desde la configuración del sistema operativo. Si se revoca
-      un permiso necesario, algunas funciones pueden dejar de estar disponibles.
-    </p>
-
-    <h2>11. Lectura única, expiración y limitaciones</h2>
-    <p>
-      Velum puede incluir funciones de lectura única, expiración o bloqueo de contenido. Estas funciones buscan reducir
-      la exposición del mensaje, pero no garantizan que otra persona no pueda copiar, fotografiar, memorizar o registrar
-      el contenido mediante medios externos.
-    </p>
-    <p>
-      La lectura única se interpreta como una restricción aplicada al acceso efectivo o desbloqueo del contenido protegido,
-      no necesariamente a la simple apertura de un enlace o pantalla previa.
-    </p>
-
-    <h2>12. Menores de edad</h2>
-    <p>
-      Velum no está dirigida específicamente a menores de edad. Si una persona menor utiliza la aplicación, debe hacerlo
-      con autorización y supervisión de su madre, padre, tutor o responsable legal, según corresponda.
-    </p>
-
-    <h2>13. Uso responsable</h2>
-    <p>
-      Velum debe utilizarse de forma legal, responsable y respetuosa de los derechos de otras personas.
-    </p>
-    <p>
-      La aplicación no debe utilizarse para acoso, amenazas, extorsión, fraude, difusión no consentida de información,
-      ocultamiento de actividades ilícitas o cualquier otro uso abusivo.
-    </p>
-
-    <h2>14. Derechos del usuario</h2>
-    <p>
-      Según la normativa aplicable, el usuario puede tener derecho a solicitar acceso, rectificación, actualización,
-      eliminación u oposición respecto de determinados datos personales.
-    </p>
-    <p>
-      Para ejercer estos derechos o realizar consultas, puede escribir a:
-      <a href="mailto:privacy@usevelum.com">privacy@usevelum.com</a>
-    </p>
-
-    <h2>15. Cambios en esta política</h2>
-    <p>
-      Podemos actualizar esta Política de Privacidad cuando cambien las funciones de la aplicación, la arquitectura técnica,
-      los proveedores utilizados, los requisitos de tiendas de aplicaciones o la normativa aplicable.
-    </p>
-    <p>
-      La fecha de última actualización indicará la versión vigente. Si los cambios son relevantes, podremos informarlos
-      dentro de la aplicación, en el sitio web o mediante otros medios razonables.
-    </p>
-
-    <h2>16. Contacto</h2>
-    <p>
-      Para consultas sobre esta política, privacidad, protección de datos, permisos o eliminación de información:
-    </p>
-    <p>
-      <strong>Email:</strong> <a href="mailto:support@usevelum.com">support@usevelum.com</a>
-    </p>
-    <p>
-      <strong>Sitio web:</strong> https://usevelum.com/
-    </p>
-
-   </main>
-
-  <footer>
-    <div class="wrap">
-      © 2026 Velum. Todos los derechos reservados.
-    </div>
-  </footer>
+  <main><article>
+<h1>Velum Via — Política de Privacidad</h1>
+<p><strong>Última actualización: 31 de julio de 2026</strong></p>
+<p>Esta Política de Privacidad explica cómo Velum Via trata la información relacionada con el uso de la aplicación, incluidos los mensajes protegidos, los datos almacenados localmente, los enlaces compartidos, la infraestructura remota, la autenticación biométrica, la cámara, las suscripciones y las opciones de eliminación.</p>
+<p>Velum Via está diseñada bajo principios de minimización de datos y privacidad por diseño. La aplicación busca tratar únicamente la información necesaria para crear, compartir, proteger, visualizar, revocar y eliminar mensajes, así como para administrar las funciones contratadas por el usuario.</p>
+<h2>1. Responsable y contacto</h2>
+<p>Velum Via es desarrollada y operada bajo la marca Velum.</p>
+<p>Para consultas sobre privacidad, protección de datos, eliminación de información o funcionamiento de la aplicación:</p>
+<ul>
+<li><strong>Privacidad:</strong> <a href="mailto:privacy@usevelum.com">privacy@usevelum.com</a></li>
+<li><strong>Soporte:</strong> <a href="mailto:support@usevelum.com">support@usevelum.com</a></li>
+<li><strong>Sitio web:</strong> <a href="https://usevelum.com/">https://usevelum.com/</a></li>
+<li><strong>Política de Privacidad:</strong> <a href="https://usevelum.com/privacy/">https://usevelum.com/privacy/</a></li>
+</ul>
+<h2>2. Alcance</h2>
+<p>Esta política se aplica a la aplicación móvil Velum Via y a las páginas oficiales vinculadas desde su ficha de Google Play.</p>
+<p>La política describe la versión de la aplicación que puede incluir:</p>
+<ul>
+<li>creación y lectura de mensajes protegidos;</li>
+<li>almacenamiento local de mensajes y preferencias;</li>
+<li>generación y apertura de enlaces de mensajes;</li>
+<li>almacenamiento remoto de contenido cifrado y metadatos mínimos;</li>
+<li>lectura única, límites de lectura, expiración y revocación;</li>
+<li>frase o clave de lectura;</li>
+<li>autenticación biométrica o credencial del dispositivo;</li>
+<li>detección local de presencia mediante la cámara;</li>
+<li>historial privado;</li>
+<li>funciones gratuitas y funciones Premium;</li>
+<li>compras o suscripciones administradas mediante Google Play.</li>
+</ul>
+<p>Velum Via no requiere crear una cuenta propia, proporcionar un nombre, un correo electrónico ni un número de teléfono para utilizar sus funciones principales.</p>
+<h2>3. Resumen del tratamiento de datos</h2>
+<h3>3.1 Datos almacenados localmente</h3>
+<p>Velum Via puede almacenar en el dispositivo:</p>
+<ul>
+<li>mensajes creados, recibidos, enviados o archivados;</li>
+<li>contenido cifrado y datos necesarios para abrirlo;</li>
+<li>claves, secretos o materiales criptográficos almacenados mediante mecanismos seguros del dispositivo;</li>
+<li>estado de lectura, disponibilidad, revocación y expiración;</li>
+<li>preferencias de privacidad y seguridad;</li>
+<li>configuración del historial privado;</li>
+<li>configuración de protección biométrica;</li>
+<li>nivel de acceso Free o Premium y datos locales de uso de funciones limitadas;</li>
+<li>información técnica necesaria para el funcionamiento de la aplicación.</li>
+</ul>
+<p>Estos datos permanecen bajo el control del usuario y se utilizan para brindar las funciones de la aplicación.</p>
+<h3>3.2 Mensajes protegidos y almacenamiento remoto</h3>
+<p>Cuando el usuario crea o comparte un mensaje remoto, Velum Via puede transmitir a su infraestructura:</p>
+<ul>
+<li>el contenido del mensaje cifrado antes de salir del dispositivo;</li>
+<li>un identificador aleatorio del mensaje;</li>
+<li>tokens o identificadores aleatorios necesarios para permitir el acceso, la lectura o la revocación;</li>
+<li>reglas de lectura única o cantidad máxima de lecturas;</li>
+<li>fecha y hora de creación;</li>
+<li>fecha y hora de expiración, cuando corresponda;</li>
+<li>estado de lectura, revocación, disponibilidad o eliminación;</li>
+<li>versión o formato técnico del mensaje;</li>
+<li>metadatos mínimos necesarios para ejecutar las reglas de seguridad.</li>
+</ul>
+<p>Velum Via no necesita almacenar el texto plano del mensaje en el servicio remoto para prestar esta función. El servidor conserva principalmente el contenido cifrado y los metadatos operativos necesarios.</p>
+<p>El enlace compartido puede contener o permitir obtener información necesaria para abrir el mensaje. Por este motivo, el usuario debe tratar el enlace como información confidencial y compartirlo únicamente con la persona destinataria.</p>
+<h3>3.3 Datos técnicos de conexión</h3>
+<p>Al comunicarse con la infraestructura remota, los proveedores técnicos pueden procesar automáticamente datos habituales de conexión, como:</p>
+<ul>
+<li>dirección IP;</li>
+<li>fecha y hora de la solicitud;</li>
+<li>tipo de dispositivo;</li>
+<li>versión del sistema operativo;</li>
+<li>versión de la aplicación;</li>
+<li>identificadores técnicos de la solicitud;</li>
+<li>registros de errores, disponibilidad y seguridad;</li>
+<li>información necesaria para prevenir abuso, fraude o accesos no autorizados.</li>
+</ul>
+<p>Estos datos no se utilizan para leer el contenido en texto plano de los mensajes ni para crear perfiles publicitarios.</p>
+<h3>3.4 Datos biométricos</h3>
+<p>Velum Via puede utilizar los mecanismos de autenticación disponibles en Android, como huella digital, reconocimiento facial o credencial de bloqueo del dispositivo.</p>
+<p>La autenticación es administrada por el sistema operativo. Velum Via:</p>
+<ul>
+<li>no recibe la plantilla biométrica;</li>
+<li>no copia la huella ni el rostro;</li>
+<li>no almacena datos biométricos;</li>
+<li>no transmite datos biométricos a sus servidores.</li>
+</ul>
+<p>La aplicación solo recibe del sistema operativo el resultado de la autenticación, por ejemplo, si fue aprobada, cancelada o rechazada.</p>
+<h3>3.5 Cámara y detección de presencia</h3>
+<p>Velum Via puede solicitar acceso a la cámara para comprobar localmente si existe presencia frente al dispositivo durante la lectura de un mensaje protegido.</p>
+<p>La cámara se utiliza para aplicar medidas visuales de privacidad, como ocultar o bloquear el contenido cuando no se cumplen las condiciones de lectura configuradas.</p>
+<p>Para esta función:</p>
+<ul>
+<li>el procesamiento está diseñado para realizarse localmente;</li>
+<li>Velum Via no está diseñada para guardar fotografías o videos;</li>
+<li>las imágenes de la cámara no se incorporan al mensaje;</li>
+<li>las imágenes o el video no se envían al backend de Velum Via;</li>
+<li>no se crea una base de datos de rostros ni se realiza identificación remota de personas.</li>
+</ul>
+<p>La detección de presencia no equivale a una garantía de identidad de la persona destinataria.</p>
+<h3>3.6 Compras y suscripciones</h3>
+<p>Las compras y suscripciones se procesan mediante Google Play Billing.</p>
+<p>Google Play puede tratar la información necesaria para gestionar el pago, la facturación, la suscripción, los reembolsos y la prevención del fraude de acuerdo con sus propias políticas.</p>
+<p>Velum Via puede recibir de Google Play información limitada, como:</p>
+<ul>
+<li>producto o plan adquirido;</li>
+<li>estado de la compra o suscripción;</li>
+<li>fecha y vigencia del acceso;</li>
+<li>token o identificador técnico de compra;</li>
+<li>estado de confirmación, cancelación, renovación o restauración.</li>
+</ul>
+<p>Velum Via no recibe ni almacena el número completo de la tarjeta, los datos bancarios completos ni las credenciales de pago del usuario.</p>
+<h3>3.7 Consultas de soporte</h3>
+<p>Si el usuario escribe voluntariamente a soporte o privacidad, Velum puede tratar:</p>
+<ul>
+<li>dirección de correo electrónico;</li>
+<li>nombre, si el usuario decide proporcionarlo;</li>
+<li>contenido de la consulta;</li>
+<li>archivos o capturas que el usuario adjunte;</li>
+<li>datos técnicos necesarios para resolver el problema.</li>
+</ul>
+<p>No deben enviarse mensajes privados, claves de lectura, enlaces activos, secretos, contraseñas ni información sensible que no sea indispensable para la consulta.</p>
+<h2>4. Datos que la aplicación no solicita como requisito general</h2>
+<p>Velum Via no requiere, como condición general para utilizar sus funciones principales:</p>
+<ul>
+<li>nombre real;</li>
+<li>cuenta de usuario propia;</li>
+<li>dirección postal;</li>
+<li>número de teléfono;</li>
+<li>lista de contactos;</li>
+<li>ubicación precisa;</li>
+<li>historial de llamadas;</li>
+<li>mensajes SMS;</li>
+<li>fotografías o videos personales;</li>
+<li>documentos de identidad;</li>
+<li>datos biométricos almacenados por Velum Via.</li>
+</ul>
+<p>La aplicación tampoco vende datos personales ni utiliza el contenido de los mensajes para publicidad personalizada.</p>
+<p>Si una versión futura incorpora una función que necesite otra categoría de datos, esta política y la declaración de Seguridad de los datos de Google Play serán actualizadas antes o junto con su publicación.</p>
+<h2>5. Finalidades del tratamiento</h2>
+<p>Velum Via puede tratar información para:</p>
+<ul>
+<li>crear, cifrar, compartir y abrir mensajes protegidos;</li>
+<li>aplicar lectura única, cantidad máxima de lecturas, expiración y revocación;</li>
+<li>mantener las bandejas de Recibidos, Enviados e Historial privado;</li>
+<li>proteger secciones mediante biometría o credencial del dispositivo;</li>
+<li>aplicar detección local de presencia;</li>
+<li>administrar el acceso a funciones Free y Premium;</li>
+<li>verificar, restaurar y mantener compras o suscripciones;</li>
+<li>operar y proteger la infraestructura remota;</li>
+<li>prevenir abuso, fraude, automatización maliciosa o acceso no autorizado;</li>
+<li>diagnosticar fallos y mantener la compatibilidad y estabilidad;</li>
+<li>responder consultas de soporte o privacidad;</li>
+<li>cumplir obligaciones legales válidas.</li>
+</ul>
+<h2>6. Proveedores y destinatarios</h2>
+<p>Velum Via no vende información personal.</p>
+<p>La información puede ser procesada de forma limitada por proveedores que ayudan a operar la aplicación:</p>
+<h3>6.1 Supabase</h3>
+<p>Velum Via utiliza infraestructura basada en Supabase para almacenar y gestionar mensajes remotos cifrados, tokens, reglas de lectura, expiración, revocación y otros metadatos operativos mínimos.</p>
+<p>Supabase puede procesar datos técnicos de infraestructura y conexión para prestar, proteger y mantener sus servicios.</p>
+<h3>6.2 Google Play y Android</h3>
+<p>Google Play distribuye la aplicación y administra las compras y suscripciones. Android administra permisos, autenticación biométrica, credenciales del dispositivo y otras funciones del sistema.</p>
+<p>Estos servicios tratan información conforme a sus propias políticas.</p>
+<h3>6.3 Proveedor de correo electrónico</h3>
+<p>El proveedor de correo utilizado por Velum puede procesar la dirección y el contenido de los mensajes enviados voluntariamente a soporte o privacidad.</p>
+<h3>6.4 Autoridades y obligaciones legales</h3>
+<p>Velum puede conservar o divulgar información cuando exista una obligación legal válida, una orden competente o cuando resulte razonablemente necesario para proteger la seguridad de usuarios, terceros, la aplicación o sus servicios.</p>
+<p>Cuando sea legalmente posible, se procurará limitar la información comunicada a lo estrictamente necesario.</p>
+<h2>7. Transferencias internacionales</h2>
+<p>Los proveedores tecnológicos utilizados por Velum Via pueden operar infraestructura o procesar datos en países distintos de aquel donde se encuentra el usuario.</p>
+<p>Cuando exista una transferencia internacional, se aplicarán las medidas contractuales, organizativas y técnicas disponibles a través de los proveedores correspondientes. El contenido remoto de los mensajes se mantiene cifrado conforme al diseño de la aplicación.</p>
+<h2>8. Seguridad</h2>
+<p>Velum Via puede utilizar, según la función y el dispositivo:</p>
+<ul>
+<li>cifrado del contenido antes de su transmisión;</li>
+<li>conexiones cifradas durante el tránsito;</li>
+<li>almacenamiento seguro de claves o secretos locales;</li>
+<li>autenticación biométrica administrada por Android;</li>
+<li>bloqueo u ocultamiento visual;</li>
+<li>restricciones de captura de pantalla cuando Android lo permite;</li>
+<li>tokens aleatorios de acceso;</li>
+<li>controles de lectura, expiración y revocación;</li>
+<li>políticas de acceso y validaciones en la infraestructura remota;</li>
+<li>minimización de metadatos.</li>
+</ul>
+<p>Ningún sistema puede garantizar seguridad absoluta. La protección también depende del dispositivo, el sistema operativo, la configuración de bloqueo, los permisos concedidos, la confidencialidad del enlace compartido y el uso responsable de la aplicación.</p>
+<h2>9. Conservación de los datos</h2>
+<h3>9.1 Datos locales</h3>
+<p>Los datos locales pueden permanecer en el dispositivo hasta que:</p>
+<ul>
+<li>el usuario los elimine desde la aplicación;</li>
+<li>se cumpla una regla de expiración o limpieza;</li>
+<li>la aplicación los purgue según la configuración disponible;</li>
+<li>el usuario borre los datos de la aplicación;</li>
+<li>el usuario desinstale la aplicación.</li>
+</ul>
+<p>Algunos estados o registros locales pueden conservarse durante el período configurado para el Historial privado.</p>
+<h3>9.2 Datos remotos</h3>
+<p>Los registros remotos pueden conservarse mientras sean necesarios para permitir la lectura o aplicar las reglas elegidas por el creador.</p>
+<p>Pueden dejar de estar disponibles o eliminarse cuando:</p>
+<ul>
+<li>se alcanza el límite de lecturas;</li>
+<li>se cumple la fecha de expiración;</li>
+<li>el creador revoca el mensaje;</li>
+<li>se ejecuta una acción de eliminación disponible;</li>
+<li>una política técnica de limpieza elimina registros vencidos o inválidos;</li>
+<li>el servicio debe eliminar información por razones de seguridad o cumplimiento.</li>
+</ul>
+<p>Si un mensaje se configura sin expiración, puede permanecer disponible hasta que sea revocado, eliminado o alcanzado por una política técnica aplicable.</p>
+<p>Copias residuales pueden permanecer temporalmente en respaldos o registros técnicos de los proveedores hasta completar sus ciclos ordinarios de rotación y eliminación.</p>
+<h2>10. Eliminación y control del usuario</h2>
+<p>El usuario puede controlar o eliminar información mediante las funciones disponibles:</p>
+<ul>
+<li>eliminar mensajes locales;</li>
+<li>mover o retirar mensajes del Historial privado;</li>
+<li>revocar mensajes remotos enviados;</li>
+<li>eliminar registros cuando la función correspondiente esté disponible;</li>
+<li>borrar los datos de la aplicación desde Android;</li>
+<li>desinstalar la aplicación;</li>
+<li>cancelar o administrar una suscripción desde Google Play;</li>
+<li>solicitar asistencia mediante <a href="mailto:privacy@usevelum.com">privacy@usevelum.com</a>.</li>
+</ul>
+<p>Velum Via no exige una cuenta propia. Por este motivo, algunos registros remotos se identifican mediante tokens o enlaces aleatorios y no mediante el nombre o correo del usuario.</p>
+<p>Si el usuario perdió el enlace, token o identificador necesario, Velum puede no estar en condiciones de localizar un registro anónimo concreto. Tampoco puede eliminar remotamente información que existe únicamente en el dispositivo del usuario.</p>
+<p>La revocación impide o limita accesos futuros según el estado del mensaje, pero no puede borrar copias, fotografías, capturas o reproducciones que otra persona haya realizado previamente por medios externos.</p>
+<h2>11. Permisos del dispositivo</h2>
+<p>Velum Via puede solicitar:</p>
+<ul>
+<li><strong>Cámara:</strong> para detección local de presencia durante la lectura protegida.</li>
+<li><strong>Biometría o credencial del dispositivo:</strong> mediante el sistema de autenticación de Android.</li>
+<li><strong>Internet:</strong> para crear, consultar, abrir, revocar o eliminar mensajes remotos, verificar compras y acceder a páginas de soporte.</li>
+<li><strong>Notificaciones:</strong> únicamente si una función de avisos requiere este permiso en la versión instalada.</li>
+</ul>
+<p>El usuario puede conceder, rechazar o revocar permisos desde Android. La denegación de un permiso puede impedir únicamente las funciones que dependen de él.</p>
+<h2>12. Enlaces, portapapeles y aplicaciones de terceros</h2>
+<p>Velum Via permite copiar o compartir enlaces mediante el portapapeles y el menú de compartir de Android.</p>
+<p>Cuando el usuario comparte un enlace con una aplicación de mensajería, correo, navegador u otro servicio, esa aplicación puede procesarlo de acuerdo con sus propias políticas. Velum Via no controla el tratamiento realizado por el servicio elegido por el usuario.</p>
+<p>Cualquier persona que obtenga un enlace válido y cumpla las condiciones de acceso podría intentar abrir el mensaje. El usuario debe proteger el enlace y, cuando corresponda, compartir la clave de lectura por un canal separado.</p>
+<h2>13. Lectura única, expiración, revocación y limitaciones</h2>
+<p>Las funciones de lectura única, expiración, límites de lectura, biometría, detección de presencia y revocación buscan reducir la exposición del contenido.</p>
+<p>No garantizan que una persona no pueda:</p>
+<ul>
+<li>fotografiar la pantalla con otro dispositivo;</li>
+<li>memorizar o transcribir el contenido;</li>
+<li>utilizar herramientas externas;</li>
+<li>conservar información obtenida antes de una revocación;</li>
+<li>acceder a una notificación o copia generada fuera del control de Velum Via.</li>
+</ul>
+<p>La lectura única se refiere al acceso efectivo gestionado por la aplicación y no necesariamente a la apertura de una pantalla previa o a un intento fallido.</p>
+<h2>14. Menores de edad</h2>
+<p>Velum Via no está dirigida específicamente a niños.</p>
+<p>Las personas menores de edad deben utilizar la aplicación únicamente con la autorización y supervisión de su madre, padre, tutor o responsable legal, de acuerdo con la normativa aplicable en su lugar de residencia.</p>
+<p>Si se detecta que se recibió información personal de un menor de manera incompatible con esta política, podrá solicitarse su eliminación a <a href="mailto:privacy@usevelum.com">privacy@usevelum.com</a>.</p>
+<h2>15. Derechos y solicitudes</h2>
+<p>Según la legislación aplicable, el usuario puede tener derecho a solicitar:</p>
+<ul>
+<li>información sobre el tratamiento de sus datos;</li>
+<li>acceso;</li>
+<li>rectificación o actualización;</li>
+<li>eliminación;</li>
+<li>oposición o limitación;</li>
+<li>portabilidad, cuando corresponda;</li>
+<li>retiro del consentimiento, cuando esa sea la base aplicable.</li>
+</ul>
+<p>Las solicitudes pueden enviarse a <a href="mailto:privacy@usevelum.com">privacy@usevelum.com</a>.</p>
+<p>Para proteger la privacidad, Velum puede solicitar información razonable para verificar la legitimidad de la solicitud. Sin embargo, debido al diseño sin cuenta y al uso de identificadores aleatorios, puede no ser posible asociar determinados registros con una persona concreta.</p>
+<h2>16. Cambios en esta política</h2>
+<p>Esta política puede actualizarse cuando cambien:</p>
+<ul>
+<li>las funciones de Velum Via;</li>
+<li>la arquitectura técnica;</li>
+<li>los proveedores;</li>
+<li>las prácticas de conservación;</li>
+<li>los permisos;</li>
+<li>las suscripciones;</li>
+<li>los requisitos de Google Play;</li>
+<li>la normativa aplicable.</li>
+</ul>
+<p>La fecha indicada al comienzo identifica la versión vigente. Si los cambios son relevantes, podrán comunicarse en la aplicación, en el sitio web o mediante otros medios razonables.</p>
+<h2>17. Contacto</h2>
+<p>Para consultas sobre privacidad, protección de datos, permisos, seguridad o eliminación:</p>
+<ul>
+<li><strong>Privacidad:</strong> <a href="mailto:privacy@usevelum.com">privacy@usevelum.com</a></li>
+<li><strong>Soporte:</strong> <a href="mailto:support@usevelum.com">support@usevelum.com</a></li>
+<li><strong>Sitio web:</strong> <a href="https://usevelum.com/">https://usevelum.com/</a></li>
+</ul>
+<p>© 2026 Velum. Todos los derechos reservados.</p>
+  </article></main>
 </body>
 </html>
