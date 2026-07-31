@@ -5,6 +5,7 @@
       "namespace": "android_app",
       "package_name": "com.usevelum.app",
       "sha256_cert_fingerprints": [
+        "CA:4B:77:7E:50:11:21:6E:0A:66:94:6D:7E:B9:98:49:61:7E:06:FF:47:97:1D:F8:4C:3C:C0:28:DC:47:5A:D8",
         "A9:91:FE:40:82:53:7B:2D:46:D6:32:DC:3E:E7:B2:98:E9:E6:5F:6B:8B:BA:FC:99:24:B4:D2:2F:4B:22:BF:8C"
       ]
     }
